@@ -5,9 +5,10 @@
 /tmp
 /out-tsc
 /bazel-out
+.angular/
 
 # Visual Studio Code
-.vscode/
+.vscode/*
 
 # System files
 .DS_Store
