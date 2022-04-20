@@ -1,0 +1,9 @@
+body{
+border: 3px solid greenyellow;
+padding: 1%;
+}
+
+.component{
+    border: 4px double red;
+    padding: 1%;
+}
