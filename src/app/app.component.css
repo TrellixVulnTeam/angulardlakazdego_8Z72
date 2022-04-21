@@ -3,23 +3,3 @@ body {
   padding: 1%;
   background-color: azure;
 }
-
-.component {
-  border: 4px double red;
-  padding: 1%;
-  margin-bottom: 1%;
-
-  /*display: flex; justify-content: space-around;*/
-}
-
-.container {
-  border: 4px double grey;
-  padding: 1%;
-  margin: 1% auto;
-  height: auto;
-}
-
-.sideBar{
-    height: 300px;
-    border: 2px solid blueviolet;
-}

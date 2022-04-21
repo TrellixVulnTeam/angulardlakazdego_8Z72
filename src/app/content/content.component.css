@@ -1,0 +1,13 @@
+body{
+    border: 3px solid firebrick;
+    padding: 1%;
+}
+
+.component {
+    border: 4px double red;
+    padding: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+  
+    /*display: flex; justify-content: space-around;*/
+  }
