@@ -1,0 +1,27 @@
+<h5>{{title }} </h5>
+
+<div class="row">
+    <div class="col ">
+        <p>Cats in an Array with a index</p>
+        <ul >
+            <li *ngFor =  "let cat of cats; let i = index; let l = last; let f = first">
+                Name: <b>{{ cat.name }}</b>  age: <b>{{cat.age }}</b>
+            </li>
+        </ul>
+         <p style="color: green;"><b>Number of cats in an Array {{cats.length }}</b> </p>
+    </div>
+
+    <div class="col ">
+        <p>Cats in an Array with a index</p>
+        <ul >
+            <li *ngFor =  "let cat of cats; let i = even">
+                <a *ngIf="i">
+                    Name: <b>{{ cat.name }}</b>  age: <b>{{cat.age }}</b>
+                </a>
+               
+            </li>
+        </ul>
+         <p style="color: green;"><b>Number of cats in an Array {{cats.length }}</b> </p>
+    </div>
+</div>
+

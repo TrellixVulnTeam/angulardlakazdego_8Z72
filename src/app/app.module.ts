@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentbottomComponent } from './contentbottom/contentbottom.component';
 import { Lesson20Component } from './content/lesson20/lesson20.component';
 import { Lesson23Component } from './content/lesson23/lesson23.component';
+import { TopcontentComponent } from './topcontent/topcontent.component';
+import { Lesson25Component } from './topcontent/lesson25/lesson25.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { Lesson23Component } from './content/lesson23/lesson23.component';
     ContentbottomComponent,
     Lesson20Component,
     Lesson23Component,
+    TopcontentComponent,
+    Lesson25Component,
    
   ],
   imports: [

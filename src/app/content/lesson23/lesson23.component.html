@@ -1,3 +1,37 @@
-<h3>
-    <b>{{ title }}</b>
- </h3>
+<body>
+    <h5>
+        <b>{{ title }}</b>
+     </h5>
+
+     <div>
+        
+         <div class="row " >
+             <div class="col ">
+                <p>Days of a Week</p>
+                <ol >
+                    <li *ngFor =  "let day of days">
+                    {{ day }}</li>
+                 </ol>
+                 <p style="color: green;"><b>Number of days in a week {{days.length }}</b> </p>
+             </div>
+
+             <div class="col ">
+                <p>Cats in an Array with a index</p>
+                <ul >
+                    <li *ngFor =  "let cat of cats; let i = index; let l = last; let f = first">
+                        {{ i+ 1 }} Name: <b>{{ cat.name }}</b>  age: <b>{{cat.age }}</b> {{ l}} + {{ f }}
+                    </li>
+                </ul>
+                 <p style="color: green;"><b>Number of cats in an Array {{cats.length }}</b> </p>
+             </div>
+             
+             <div class="component">
+                <p>Components generated ny *ngFor directive</p>
+                <div *ngFor="let i of [1,2,3,4]" class="component">
+                   <button class="btn btn-primary">add me please</button>
+               </div>
+            </div>        
+         </div>
+     </div>
+</body>
+
