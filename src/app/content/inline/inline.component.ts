@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InlineComponent implements OnInit {
 
-  title = 'Inline Component #18';
+  title = 'Inline Component #18 ng g c --inline-templete to display others component ';
 
   constructor() { }
 
