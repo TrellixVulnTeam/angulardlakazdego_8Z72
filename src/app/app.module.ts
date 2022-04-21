@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentbottomComponent } from './contentbottom/contentbottom.component';
 import { Lesson20Component } from './content/lesson20/lesson20.component';
+import { Lesson23Component } from './content/lesson23/lesson23.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { Lesson20Component } from './content/lesson20/lesson20.component';
     FooterComponent,
     ContentbottomComponent,
     Lesson20Component,
+    Lesson23Component,
    
   ],
   imports: [
