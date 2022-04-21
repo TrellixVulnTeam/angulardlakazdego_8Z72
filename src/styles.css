@@ -1,11 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-
-
+.component {
+    border: 4px double red;
+    padding: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
   
+    /*display: flex; justify-content: space-around;*/
+  }
   .container {
     border: 4px double grey;
     padding: 1%;
     margin: 1% auto;
     height: auto;
+     /*display: flex; justify-content: space-around;*/
    
   }
