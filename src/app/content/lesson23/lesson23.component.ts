@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lesson23.component.css'],
 })
 export class Lesson23Component implements OnInit {
-  title = 'Data display Directive  *ngFor lessons  #23 and #24 INDEX';
+  title = 'Component lesson 23 Data display Directive  *ngFor lessons  #23 and #24 INDEX ';
   lesson = 'li *ngFor =  "let cat of cats; let i = index; let l = last; let f = first';
   days = [
     'Monday ',

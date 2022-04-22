@@ -1,0 +1,41 @@
+<p>{{ title }}</p>
+<p>Days of a week</p>
+<div class="row">
+  <div class="col">
+    <div *ngFor="let day of days">
+      <span [ngSwitch]="day">
+        <a *ngSwitchCase="'Monday'">Poniedzialek</a>
+        <a *ngSwitchCase="'Tuesday'">Wtorek</a>
+        <a *ngSwitchCase="'Wednesday'">Sroda</a>
+        <a *ngSwitchCase="'Thuesday'">Czwartek</a>
+        <a *ngSwitchCase="'Friday'">Piatek</a>
+        <a *ngSwitchCase="'Saturday'">Sobota</a>
+        <a *ngSwitchDefault>Niedziela</a>
+      </span>
+    </div>
+  </div>
+
+  <div class="col">
+    <span *ngIf="isVisible">
+      <a *ngFor="let day of days">
+        <li>
+          {{ day }}
+        </li>
+      </a>
+    </span>
+    <button (click)="show()">NgIf</button>
+    <p>destroys the whole object <b>Takes longer time!!</b></p>
+  </div>
+
+  <div class="col">
+    <span [hidden]="isHidden">
+      <a *ngFor="let day of days">
+        <li>
+          {{ day }}
+        </li>
+      </a>
+    </span>
+    <button (click)="hide()">Hidden</button>
+    <p>object is only hiden still in the memory</p>
+  </div>
+</div>
