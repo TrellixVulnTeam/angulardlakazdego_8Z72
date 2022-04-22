@@ -1,0 +1,28 @@
+<p>{{ title }}</p>
+<h5>mg-template as well !!</h5>
+
+<a *ngIf="cats.length > 0; then areDogs; else noCats"></a>
+<ng-template #areDogs>
+  <ol class="list-group list-group-numbered">
+    <a *ngFor="let cat of cats">
+      <li class="list-group-item" *ngIf="cat.age > 4">
+        {{ cat.name }} years {{ cat.age }}
+      </li>
+    </a>
+  </ol>
+</ng-template>
+
+<ng-template #noCats>
+  <h4>No cats to display</h4>
+</ng-template>
+
+<div class="row">
+    <div class="col"  *ngIf=" cats.length === 0">
+        <button class="btn btn-secondary" (click)="showCats()">Show Cats</button>
+    </div>
+    <div class="col"  *ngIf=" cats.length > 0">
+        <button class="btn btn-success" (click)="hideCats()">Hide Cats</button>
+    </div>
+</div>
+
+

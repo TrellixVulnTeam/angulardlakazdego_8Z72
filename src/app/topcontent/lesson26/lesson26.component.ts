@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-lesson25',
-  templateUrl: './lesson25.component.html',
-  styleUrls: ['./lesson25.component.css']
+  selector: 'app-lesson26',
+  templateUrl: './lesson26.component.html',
+  styleUrls: ['./lesson26.component.css']
 })
-export class Lesson25Component implements OnInit {
+export class Lesson26Component implements OnInit {
 
-  title = 'Dispaly Data *ngIf and ng-container lesson #25';
-  isDisplayed = false;
+  title = 'Display data with *ngIf; then; elese lesson #26';
 
   cats = new Array<Cat>();
+  emptyCats : Array<Cat>[] = [];
 
-
-  constructor() {
+  initCats(){
     this.cats.push(
       new Cat('Kitty', 12),
       new Cat('Simba', 5),
@@ -23,9 +22,23 @@ export class Lesson25Component implements OnInit {
       new Cat('Pluto', 15),
       new Cat('Artemiz', 11)
     );
+  }
+
+
+  constructor() {
+    this.initCats();
+   }
+
+   showCats(){
+    this.initCats();
+   }
+
+   hideCats(){
+    this.cats = [];
    }
 
   ngOnInit(): void {
+
   }
 
 }

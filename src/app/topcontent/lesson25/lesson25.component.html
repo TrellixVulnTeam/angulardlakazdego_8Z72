@@ -1,27 +1,53 @@
-<h5>{{title }} </h5>
+<body>
+  <h5>{{ title }}</h5>
 
-<div class="row">
-    <div class="col ">
-        <p>Cats in an Array with a index</p>
-        <ul >
-            <li *ngFor =  "let cat of cats; let i = index; let l = last; let f = first">
-                Name: <b>{{ cat.name }}</b>  age: <b>{{cat.age }}</b>
-            </li>
-        </ul>
-         <p style="color: green;"><b>Number of cats in an Array {{cats.length }}</b> </p>
+  <div class="row">
+    <p>{{ cats.length }}</p>
+    <p>
+      <b>ng-container </b>is not under css style watch it is neutral for css
+      class
+    </p>
+
+    <div class="col alert alert-success">
+      <div *ngIf="cats.length > 0">
+        <p>Cats in an Array ngIf cats.length > 0</p>
+        <ol class="list-group">
+          <li
+            class="list-group-item"
+            *ngFor="let cat of cats; let i = index; let l = last; let f = first"
+          >
+            Name: <b>{{ cat.name }}</b> age: <b>{{ cat.age }}</b>
+          </li>
+        </ol>
+        <p style="color: green">
+          <b>Number of cats in an Array {{ cats.length }}</b>
+        </p>
+      </div>
     </div>
 
-    <div class="col ">
-        <p>Cats in an Array with a index</p>
-        <ul >
-            <li *ngFor =  "let cat of cats; let i = even">
-                <a *ngIf="i">
-                    Name: <b>{{ cat.name }}</b>  age: <b>{{cat.age }}</b>
-                </a>
-               
-            </li>
+    <div class="col alert light">
+      <p>Cats in an Array if pazyste (even)</p>
+      <ng-container *ngFor="let cat of cats; let i = even; let in = index">
+        <ul>
+          <li class="list-group-item" *ngIf="i">
+            {{ in }} Name: <b>{{ cat.name }}</b> age: <b>{{ cat.age }}</b>
+          </li>
         </ul>
-         <p style="color: green;"><b>Number of cats in an Array {{cats.length }}</b> </p>
+      </ng-container>
+      <p style="color: green">
+        <b>Number of cats in an Array {{ cats.length }}</b>
+      </p>
     </div>
-</div>
 
+    <div class="col alert alert-secondary">
+      <p>Cats older than 3 years</p>
+      <ol class="list-group list-group-numbered">
+        <a *ngFor="let cat of cats">
+          <li class="list-group-item" *ngIf="cat.age > 4">
+            {{ cat.name }} years {{ cat.age }}
+          </li>
+        </a>
+      </ol>
+    </div>
+  </div>
+</body>

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopcontentComponent implements OnInit {
 
-  title = 'Content Top Component'
+  title = 'Content topcomponent'
 
   constructor() { }
 

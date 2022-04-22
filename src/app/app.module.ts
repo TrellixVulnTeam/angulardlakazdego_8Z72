@@ -13,6 +13,7 @@ import { Lesson20Component } from './content/lesson20/lesson20.component';
 import { Lesson23Component } from './content/lesson23/lesson23.component';
 import { TopcontentComponent } from './topcontent/topcontent.component';
 import { Lesson25Component } from './topcontent/lesson25/lesson25.component';
+import { Lesson26Component } from './topcontent/lesson26/lesson26.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { Lesson25Component } from './topcontent/lesson25/lesson25.component';
     Lesson23Component,
     TopcontentComponent,
     Lesson25Component,
+    Lesson26Component,
    
   ],
   imports: [
