@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,10 @@ import { TopcontentComponent } from './topcontent/topcontent.component';
 import { Lesson25Component } from './topcontent/lesson25/lesson25.component';
 import { Lesson26Component } from './topcontent/lesson26/lesson26.component';
 import { Lesson27Component } from './topcontent/lesson27/lesson27.component';
+import { Lesson29Component } from './content/lesson29/lesson29.component';
+import { Lesson30Component } from './content/lesson30/lesson30.component';
+import { Lesson31Component } from './content/lesson31/lesson31.component';
+import { Lesson32Component } from './content/lesson32/lesson32.component';
 
 @NgModule({
   declarations: [
@@ -31,11 +36,16 @@ import { Lesson27Component } from './topcontent/lesson27/lesson27.component';
     Lesson25Component,
     Lesson26Component,
     Lesson27Component,
+    Lesson29Component,
+    Lesson30Component,
+    Lesson31Component,
+    Lesson32Component,
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
