@@ -8,10 +8,11 @@
     /*display: flex; justify-content: space-around;*/
   }
   .container {
-    border: 4px double grey;
+    
     padding: 1%;
     margin: 1% auto;
     height: auto;
-     display: flex; justify-content: space-around;
+    display: flex; justify-content: space-around;
    
   }
+

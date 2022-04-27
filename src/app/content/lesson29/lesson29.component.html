@@ -1,0 +1,15 @@
+<p>{{title }}</p>
+
+<div>
+    <input [value]="inputText">from component to html
+</div>
+
+<div>
+    <input [(ngModel)]="inputTextTwoWay">{{ inputTextTwoWay}}
+</div>
+
+<div>
+    <input type="text " (click)="click($event)">
+    <button [disabled]="button" > Add </button>
+    {{showClick }}
+</div>

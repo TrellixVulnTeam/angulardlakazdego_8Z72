@@ -1,0 +1,17 @@
+<h5>{{ title}}</h5>
+<p> I'm working as  <b> {{ job }} </b> and on frontend as <b> {{ skills }} </b> </p>
+<br>
+
+
+    <label for="exampleInputEmail1" class="form-label">Ocupation</label>
+    <input [(ngModel)]="job" class="form-control">
+    <div class="form-text"> Two way data binding [(*ngModel)] </div>
+<br>
+    <div class="mb-3">
+        <label >Skills</label>
+        <input  [(ngModel)]= "skills" class="form-control" >
+      </div>
+
+
+<br>
+

@@ -1,0 +1,27 @@
+<h3 [className]="colorClass">{{title }}</h3>
+(focus), (Click), (mousemove), (paste)
+
+<div class="row offset-1">
+    <div class="col col-sm-2" *ngFor="let i of [1,2,3,4,5]">
+        <input [value]="value" type="text" [disabled]="isDisable">
+        <button>button</button>
+    </div>
+
+    <div class="">
+       1 <input type="text" [disabled]="isDisable" (focus)="onFocus()">
+    </div>
+
+    <div class="">
+       2 <input type="text" [disabled]="isDisable" (click)="onClick($event)">
+    </div>
+
+    <div class="">
+       3 <input type="text" [disabled]="isDisable" (mousemove)="mouseMove($event)">
+    </div>
+
+    <div class="">
+       4 <input type="text" [disabled]="isDisable" (paste)="paste()">{{ inputText}}
+    </div>
+</div>
+<button (click)="change()">Change</button>
+
