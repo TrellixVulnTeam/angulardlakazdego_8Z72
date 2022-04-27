@@ -21,6 +21,9 @@ import { Lesson30Component } from './content/lesson30/lesson30.component';
 import { Lesson31Component } from './content/lesson31/lesson31.component';
 import { Lesson32Component } from './content/lesson32/lesson32.component';
 import { Lesson34Component } from './content/lesson34/lesson34.component';
+import { Lesson35parrentComponent } from './content/lesson35parrent/lesson35parrent.component';
+import { Lesson35child1Component } from './content/lesson35parrent/lesson35child1/lesson35child1.component';
+import { Lesson35child2Component } from './content/lesson35parrent/lesson35child2/lesson35child2.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,9 @@ import { Lesson34Component } from './content/lesson34/lesson34.component';
     Lesson31Component,
     Lesson32Component,
     Lesson34Component,
+    Lesson35parrentComponent,
+    Lesson35child1Component,
+    Lesson35child2Component,
    
   ],
   imports: [
