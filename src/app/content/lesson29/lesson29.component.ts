@@ -14,7 +14,7 @@ export class Lesson29Component implements OnInit {
 
   showClick  = '';
 
-  click(event: any){
+  click(event: MouseEvent){
     this.showClick = 'Activated'
     this.button = false;
     console.log(event);

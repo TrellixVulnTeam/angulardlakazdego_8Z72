@@ -1,0 +1,43 @@
+<p>
+  <b>{{ title }} </b>
+  ng-container & ng-templete
+</p>
+
+<div>
+  <div class="container">
+    <div>
+      <input type="" [(ngModel)]="newTask" />
+      <button (click)="addTask()">Add</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div>
+      <ng-container *ngIf="tasksToDo.length > 0; else noTasks">
+        <div class="divs">
+          Tasks To Do
+          <ol>
+            <li *ngFor="let task of tasksToDo">
+              {{ task }}
+              <button (click)="deleteTasks(task)">Delete</button>
+              <button (click)="doneTasks(task)">Done</button>
+            </li>
+          </ol>
+        </div>
+      </ng-container>
+
+      <ng-template #noTasks>
+        <p>No tasks to do</p>
+      </ng-template>
+    </div>
+
+    <div class="">
+      Tasks Done <b> {{ tasksDone.length }} </b>
+      <ol>
+        <li *ngFor="let doneTask of tasksDone">
+          {{ doneTask }}
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
