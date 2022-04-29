@@ -1,13 +1,16 @@
 <p>{{ title }} <b>Lesson35parrent Component</b></p>
 
 <div class="container">
+  <div>
+    <li *ngFor="let task of receviedTasksArray">
+     <b> {{ task }}</b> received 
+    </li>
+  </div>
+ 
 
   <div class="">
-    <app-lesson35child1></app-lesson35child1>
+    <app-lesson35child1 [tasks]="parentTasks" (outputTask)="receivedTask($event)"></app-lesson35child1>
   </div>
 
-  <div class="">
-     <app-lesson35child2></app-lesson35child2>
-</div>
-
+  
 </div>

@@ -1,1 +1,7 @@
 <p>{{ title }}</p>
+<div>
+    <li *ngFor="let task of tasks">
+        {{ task}}
+        <button (click)="sentTask(task)">Sent</button>
+    </li>
+</div>
