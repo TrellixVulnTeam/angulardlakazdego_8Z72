@@ -9,6 +9,14 @@ export class Lesson35parrentComponent implements OnInit {
 
   title = ' Lesson #36 Component integration ';
 
+  parentTasks = ['swimming','work','slip','shopings'];
+
+  receviedTasksArray: string[] = [];
+
+  receivedTask(task : string): void{
+    this.receviedTasksArray.push(task);
+  }
+
   constructor() { }
 
   ngOnInit(): void {
