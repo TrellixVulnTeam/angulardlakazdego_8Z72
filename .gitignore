@@ -9,6 +9,7 @@
 
 # Visual Studio Code
 .vscode/
+.vs/
 
 # System files
 .DS_Store
