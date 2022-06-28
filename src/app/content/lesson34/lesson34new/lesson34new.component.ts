@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson34newComponent implements OnInit {
 
-  title = "New lesson 34";
+  title = 'New lesson 34';
+  tasksList: string[] = [];
+
+  addTask(task: string) {
+    this.tasksList.push(task);
+  }
+
   constructor() { }
 
   ngOnInit(): void {

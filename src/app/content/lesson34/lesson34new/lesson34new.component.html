@@ -1,7 +1,13 @@
 <p>{{title}}</p>
 
 <div class="container">
-  <app-component1 style ="border: 4px double green; padding: 1%; width: 49%;"></app-component1>
-  <app-component2 style ="border: 4px double green; padding: 1%; width: 49%;"></app-component2>
-
+  <div style="border: 4px double green; padding: 1%; width: 49%;">
+        <app-component1 (emitTasks)="addTask($event)" ></app-component1>
+  </div>
+  
+  <div style ="border: 4px double green; padding: 1%; width: 49%;">
+    <p>Parent Componet</p>
+    <li *ngFor="let task of tasksList">
+        <b>{{ task }}</b> received </li>
+    </div>
 </div>
