@@ -10,7 +10,7 @@ export class Lesson35child1Component implements OnInit {
   title= 'Child 1 Component ';
 
   @Input()
-  tasks: string[] = []
+  tasks: string[] = [];
 
   @Output()
   outputTask = new EventEmitter<string>();

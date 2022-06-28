@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-lesson35parrent',
@@ -9,7 +9,8 @@ export class Lesson35parrentComponent implements OnInit {
 
   title = ' Lesson #36 Component integration ';
 
-  parentTasks = ['swimming','work','slip','shopings'];
+  parentTasksArray = ['swimming', 'work', 'slip', 'shopings'];
+
 
   receviedTasksArray: string[] = [];
 
