@@ -1,18 +1,18 @@
 <p>{{ title }} <b>Lesson35 parrent Component</b></p>
 
-<div class="container">
-    <div style="border: 2px solid red; padding:1%;">
+<div class="container" >
+  <div style="border: 2px solid red; padding:1%; width: 33%">
     <p>Just container</p>
     <li *ngFor="let task of receviedTasksArray">
       <b> {{task}}</b> received
     </li>
   </div>
 
-  <div style="border: 2px solid red; padding:1%;">
+  <div style="border: 2px solid red; padding:1%; width: 33%">
     <app-lesson35child2 [tasks]="receviedTasksArray"></app-lesson35child2>
   </div>
 
-  <div style="border: 2px solid red; padding:1%;">
+  <div style="border: 2px solid red; padding:1%; width: 33%">
     <app-lesson35child1 [tasks]="parentTasksArray" (outputTask)="receivedTask($event)"></app-lesson35child1>
   </div>
 
