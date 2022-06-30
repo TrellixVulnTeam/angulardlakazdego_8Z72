@@ -9,8 +9,15 @@ export class Lesson35parrentComponent implements OnInit {
 
   title = ' Lesson #36 Component integration ';
 
-  parentTasksArray = ['swimming', 'work', 'slip', 'shopings'];
+ 
+ parentTasksArray = ['swimming', 'work', 'slip', 'shopings', 'playing'];
 
+  @Output()
+  emitTasks = new EventEmitter<string[]>();
+
+  emitedTaks(tasks: string[]): void {
+    this.emitTasks.emit(tasks);
+  }
 
   receviedTasksArray: string[] = [];
 
@@ -21,6 +28,9 @@ export class Lesson35parrentComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    this.emitedTaks(this.parentTasksArray);
+    
   }
 
 }

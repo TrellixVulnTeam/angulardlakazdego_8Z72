@@ -26,6 +26,8 @@ import { Lesson35child1Component } from './content/lesson35parrent/lesson35child
 import { Lesson35child2Component } from './content/lesson35parrent/lesson35child2/lesson35child2.component';
 import { Lesson34newComponent } from './content/lesson34/lesson34new/lesson34new.component';
 import { Component1Component } from './content/lesson34/lesson34new/component1/component1.component';
+import { Lesson40Component } from './content/lesson40/lesson40.component';
+import { Lesson41Component } from './content/lesson41/lesson41.component';
 
 
 
@@ -54,6 +56,8 @@ import { Component1Component } from './content/lesson34/lesson34new/component1/c
     Lesson35child2Component,
     Lesson34newComponent,
     Component1Component,
+    Lesson40Component,
+    Lesson41Component,
    
   ],
   imports: [

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-content',
@@ -8,6 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class ContentComponent implements OnInit {
 
   title = 'Content Component';
+
+  @Input()
+  tasks: string[] = [];
+
+  getTasks(task: string[]) {
+    this.tasks = task;
+  }
+
 
   constructor() { }
 

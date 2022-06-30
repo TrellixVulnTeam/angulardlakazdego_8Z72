@@ -1,7 +1,33 @@
 <body>
   <p>{{ title }}</p>
+  <div class="component ">
+    <app-lesson40>
+      <div class="container">
+       
+        <div>
+          <h2>Added new code!!</h2>
+          <ul>
+            <li> One </li>
+            <li> Two </li>
+            <li> Three </li>
+          </ul>
+          <app-lesson35child1 [tasks] ="tasks "></app-lesson35child1>
+        </div>
+
+        <div>
+          <ol>
+            <li>ONE</li>
+            <li>TWO</li>
+            <li>THREE</li>
+          </ol>
+        </div>
+      </div>
+
+    </app-lesson40>
+  </div>
+
   <div class="component">
-    <app-lesson35parrent></app-lesson35parrent>
+    <app-lesson35parrent (emitTasks) ="getTasks($event) "></app-lesson35parrent>
   </div>
 
   <div>
@@ -29,7 +55,7 @@
     </div>
 
   </div>
-  
+
   <div class="row">
 
     <div class="col">
@@ -52,21 +78,21 @@
   </div>
 
   <div class="component">
-   <app-lesson23></app-lesson23>
-</div>
+    <app-lesson23></app-lesson23>
+  </div>
 
   <div class="">
     <div class="component">
-       <app-lesson20></app-lesson20>
+      <app-lesson20></app-lesson20>
     </div>
-    
+
     <div class="component">
       <app-inline></app-inline>
     </div>
 
-  
 
-    
-    
+
+
+
   </div>
 </body>
