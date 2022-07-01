@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson41Component implements OnInit {
 
+
+  title = 'Lesson #41 lifecycle hooks';
   constructor() { }
 
   ngOnInit(): void {
