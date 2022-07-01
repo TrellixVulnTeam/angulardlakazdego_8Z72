@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Animal } from 'src/app/content/lesson41/animal'
 
 @Component({
@@ -6,7 +6,7 @@ import { Animal } from 'src/app/content/lesson41/animal'
   templateUrl: './lesson41-child1.component.html',
   styleUrls: ['./lesson41-child1.component.css']
 })
-export class Lesson41Child1Component implements OnInit {
+export class Lesson41Child1Component implements OnInit, OnChanges, DoCheck {
 
   title = 'Lesson41 Child component';
 
@@ -17,9 +17,21 @@ export class Lesson41Child1Component implements OnInit {
   animals: Animal[] = [];
 
 
+
   constructor() { }
+    ngDoCheck(): void {
+        console.log('Method ngDoCheck not implemented [ 3 ].');
+    }
+
+    ngOnChanges(changes: SimpleChanges): void {
+      console.log('Implemented ngOnChanges() method ! [ 1 ]');
+      console.log('Changes: ' + changes);
+  }
+
 
   ngOnInit(): void {
+
+    console.log('ngOnInit [ 2 ] ');
   }
 
 }

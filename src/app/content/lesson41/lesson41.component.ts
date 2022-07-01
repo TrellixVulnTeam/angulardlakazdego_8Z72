@@ -6,7 +6,7 @@ import { Animal } from 'src/app/content/lesson41/animal';
   templateUrl: './lesson41.component.html',
   styleUrls: ['./lesson41.component.css']
 })
-export class Lesson41Component implements OnInit, OnChanges {
+export class Lesson41Component implements OnInit {
 
 
   title = 'Lesson #41 lifecycle hooks';
@@ -28,8 +28,11 @@ export class Lesson41Component implements OnInit, OnChanges {
     this.title = 'New Title ';
 }
   changeAnimal() {
-  this.animals.push(this.cat)}
+    this.animals.push(this.cat)
+  }
+
   doNothing() { }
+
   deleteComponent() { }
 
 
@@ -40,11 +43,11 @@ export class Lesson41Component implements OnInit, OnChanges {
    * It starts before ngOnInit();
    * A reference mast change it
    */
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('Implemented ngOnChanges() method !');
-  }
+  
 
   ngOnInit(): void {
+
+    this.animals.push(this.dog);
   }
 
 }

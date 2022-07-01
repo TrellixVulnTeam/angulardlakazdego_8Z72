@@ -1,11 +1,16 @@
-<p><b>{{title}} </b> ngOnChanges</p>
+<div style="border: 6px outset yellow; padding: 1%;">
+  <p><b>{{title}} </b> ngOnChanges</p>
 
-<div *ngIf="show">
-  <app-lesson41-child1 [inputText] =" titleForChild" [animals] =" animals"></app-lesson41-child1>
+
+
+  <button class="btn btn-info btn-sm" (click)=" changeTitle()"> Change Title</button>
+  <button class="btn btn-success  btn-sm" (click)="changeAnimal()">Change Animal</button>
+  <button class="btn btn-secondary  btn-sm" (click)="doNothing()">Do nothing</button>
+  <button class="btn btn-primary  btn-sm" (click)="deleteComponent()">Delete</button>
+
+  <div *ngIf="show">
+    <app-lesson41-child1 [inputText]=" titleForChild" [animals]=" animals"></app-lesson41-child1>
+  </div>
 </div>
 
-<button class="btn btn-info btn-sm"(click) =" changeTitle()"> Change Title</button>
-<button class="btn btn-success  btn-sm"(click) ="changeAnimal()">Change Animal</button>
-<button class="btn btn-secondary  btn-sm"(click)="doNothing()">Do nothing</button>
-<button class="btn btn-primary  btn-sm" (click)="deleteComponent()">Delete</button>
 
