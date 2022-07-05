@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Lesson39Component } from './lesson39/lesson39.component';
 
 @Component({
   selector: 'app-content',
@@ -16,10 +17,12 @@ export class ContentComponent implements OnInit {
     this.tasks = task;
   }
 
-
+ 
   constructor() { }
 
   ngOnInit(): void {
+
+    
   }
 
 }
