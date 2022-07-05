@@ -24,7 +24,7 @@ export class Lesson39Component implements OnInit {
 
   ngOnInit(): void {
     this.title += this.child1.title;
-    this.child1.title += this.localInputToSTring;
+    
   }
 
 }

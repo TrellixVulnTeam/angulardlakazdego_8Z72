@@ -10,12 +10,12 @@ export class Lesson39ChildComponent implements OnInit {
   title = 'Lesson #39 child';
 
   @Input()
-  fromParent: string = '';
+  localInputToSTring: string = '';
 
   constructor() { }
 
   ngOnInit(): void {
-    this.title += + this.fromParent;
+    this.title += + this.localInputToSTring;
   }
 
 }
