@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson34Component implements OnInit {
 
-  title = 'Lesson #34 List of Tasks';
+  title = 'Lesson #34 List of Tasks & #39 local reference';
 
   newTask = '';
 

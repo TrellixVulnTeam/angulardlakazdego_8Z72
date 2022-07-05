@@ -17,8 +17,8 @@ export class Lesson41Child1Component implements OnInit, OnChanges, DoCheck {
   animals: Animal[] = [];
 
 
-
   constructor() { }
+
     ngDoCheck(): void {
         console.log('Method ngDoCheck not implemented [ 3 ].');
     }
