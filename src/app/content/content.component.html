@@ -1,6 +1,12 @@
 <body>
   <p>{{ title }}</p>
 
+
+  <div class="component">
+    
+    <app-lesson39 ></app-lesson39>
+  </div>
+
   <div class="component">
     <app-lesson41></app-lesson41>
   </div>
@@ -8,7 +14,7 @@
   <div class="component ">
     <app-lesson40>
       <div class="container">
-       
+
         <div>
           <h2>Added new code!!</h2>
           <ul>
@@ -16,7 +22,7 @@
             <li> Two </li>
             <li> Three </li>
           </ul>
-          <app-lesson35child1 [tasks] ="tasks "></app-lesson35child1>
+          <app-lesson35child1 [tasks]="tasks "></app-lesson35child1>
         </div>
 
         <div>
@@ -32,14 +38,14 @@
   </div>
 
   <div class="component">
-    <app-lesson35parrent (emitTasks) ="getTasks($event) "></app-lesson35parrent>
+    <app-lesson35parrent (emitTasks)="getTasks($event) "></app-lesson35parrent>
   </div>
 
-  <div>
-    <div class="component">
-      <app-lesson34new></app-lesson34new>
-    </div>
+
+  <div class="component">
+    <app-lesson34new></app-lesson34new>
   </div>
+
 
   <div class="component">
     <app-lesson34></app-lesson34>

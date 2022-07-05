@@ -1,2 +1,32 @@
-<p>{{title}} ngOnChanges</p>
+<div style="border: 6px outset yellow; padding: 1%;">
+
+  <p><b>{{title}} </b> </p>
+
+  <div >
+
+    <ol>
+
+      <li><p><b>ngOnChanges</b>-  it starts at the beginning before ngOnInit(), controls binded fields. Reference mast change.</p>  </li>
+      <li> <p><b>ngOnInit</b> starts onlu ones during the comopnent inicialisation. Runs after the constructor and after ngOnChange()</p> </li>
+      <li><p><b>DoCheck</b> runs with any changes , if an event is call</p>  </li>
+      <li> <p><b>AfterContentInit</b> runs after inicialisation e.g. ng-content</p> </li>
+      <li> ngOnChanges </li>
+      <li> AfterContentCheckd </li>
+      <li> AfterViewInit </li>
+      <li><p><b>onDestroy</b> if this componene destroyed !</p>  </li>
+    </ol>
+  </div>
+  
+
+
+  <button class="btn btn-info btn-sm" (click)=" changeTitle()"> Change Title</button>
+  <button class="btn btn-success  btn-sm" (click)="changeAnimal()">Change Animal</button>
+  <button class="btn btn-secondary  btn-sm" (click)="doNothing()">Do nothing</button>
+  <button class="btn btn-primary  btn-sm" (click)="deleteComponent()" >{{delete}}</button>
+
+  <div *ngIf="show">
+    <app-lesson41-child1 [inputText]=" titleForChild" [animals]=" animals" *ngIf="show"></app-lesson41-child1>
+  </div>
+</div>
+
 

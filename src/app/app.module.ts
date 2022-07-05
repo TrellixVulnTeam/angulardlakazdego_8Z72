@@ -28,6 +28,8 @@ import { Lesson34newComponent } from './content/lesson34/lesson34new/lesson34new
 import { Component1Component } from './content/lesson34/lesson34new/component1/component1.component';
 import { Lesson40Component } from './content/lesson40/lesson40.component';
 import { Lesson41Component } from './content/lesson41/lesson41.component';
+import { Lesson41Child1Component } from './content/lesson41/lesson41-child1/lesson41-child1.component';
+import { Lesson39Component } from './content/lesson39/lesson39.component';
 
 
 
@@ -58,6 +60,8 @@ import { Lesson41Component } from './content/lesson41/lesson41.component';
     Component1Component,
     Lesson40Component,
     Lesson41Component,
+    Lesson41Child1Component,
+    Lesson39Component,
    
   ],
   imports: [
