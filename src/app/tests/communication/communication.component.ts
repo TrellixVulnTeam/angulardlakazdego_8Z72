@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommunicationComponent implements OnInit {
 
+  title = 'Communication between components';
+
   constructor() { }
 
   ngOnInit(): void {
