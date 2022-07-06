@@ -12,7 +12,7 @@ export class Lesson41Component implements OnInit, OnDestroy {
   title = 'Lesson #41 lifecycle hooks';
   delete = '';
 
-  titleForChild = 'Child1 exercise inputText from parrent';
+  titleForChild = 'Child1 exercise inputText from Parent';
 
   cat = new Animal('Kitty','Cat');
   dog = new Animal('Champion', 'Dog');
