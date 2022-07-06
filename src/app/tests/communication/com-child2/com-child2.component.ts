@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComChild2Component implements OnInit {
 
+  title = 'Communication Child 2';
+
   constructor() { }
 
   ngOnInit(): void {
