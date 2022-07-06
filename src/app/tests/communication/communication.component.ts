@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CommunicationComponent implements OnInit {
 
   title = 'Communication between components';
-  animalsParent: any[] = ['Dog','Cat','Bird']
+  animalsParent: any[] = ['Dog','Cat','Bird','Fish']
 
 
   constructor() { }
