@@ -1,0 +1,8 @@
+body{
+    border: 3px dashed blue;
+}
+
+.col {
+    border: 4px solid green;
+    text-align: center;
+}
