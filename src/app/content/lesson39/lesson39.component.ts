@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Lesson39ChildComponent } from './lesson39-child/lesson39-child.component';
 
 @Component({
   selector: 'app-lesson39',
@@ -7,17 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson39Component implements OnInit {
 
-  title = '#39 Local reference #referenceName';
+  title = '#39 Local reference #referenceName add(input: HTMLInputElement) and ';
 
   localInputToSTring = '';
 
   add(input: HTMLInputElement) {
     this.localInputToSTring = input.value;
+   
   }
+
+  @ViewChild('#childReference')
+    child1: Lesson39ChildComponent = new Lesson39ChildComponent;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.title += this.child1.title;
+    
   }
 
 }

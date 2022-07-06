@@ -30,11 +30,14 @@ import { Lesson40Component } from './content/lesson40/lesson40.component';
 import { Lesson41Component } from './content/lesson41/lesson41.component';
 import { Lesson41Child1Component } from './content/lesson41/lesson41-child1/lesson41-child1.component';
 import { Lesson39Component } from './content/lesson39/lesson39.component';
+
 import { CommunicationComponent } from './tests/communication/communication.component';
 import { TestsComponent } from './tests/tests.component';
 import { ComChild1Component } from './tests/communication/com-child1/com-child1.component';
 import { ComChild2Component } from './tests/communication/com-child2/com-child2.component';
 import { ComChild3Component } from './tests/communication/com-child3/com-child3.component';
+
+
 
 
 
@@ -67,11 +70,13 @@ import { ComChild3Component } from './tests/communication/com-child3/com-child3.
     Lesson41Component,
     Lesson41Child1Component,
     Lesson39Component,
+
     CommunicationComponent,
     TestsComponent,
     ComChild1Component,
     ComChild2Component,
     ComChild3Component,
+
    
   ],
   imports: [
