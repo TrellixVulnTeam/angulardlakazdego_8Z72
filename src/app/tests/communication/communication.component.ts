@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class CommunicationComponent implements OnInit {
 
   title = 'Communication between components';
+  animalsParent: any[] = ['Dog','Cat','Bird']
+
 
   constructor() { }
 
   ngOnInit(): void {
+
+    this.animalsParent.length;
   }
 
 }
