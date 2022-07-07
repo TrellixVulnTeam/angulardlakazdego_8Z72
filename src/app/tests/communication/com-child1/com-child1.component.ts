@@ -9,24 +9,25 @@ export class ComChild1Component implements OnInit {
 
   title = 'Communication Child 1';
 
-  processedAnimals: string[] = [];
-
-  @Input()
+   @Input()
   animalsFromParent: string[] = [];
 
   @Output()
   emitAnimalProccessed = new EventEmitter<string[]>();
 
+  processedAnimals: string[] = [];
+
   constructor() { }
 
-  processAnimalArray(data: string[]) {
-    for (var i = 0; i < data.length; i++) {
-      this.processedAnimals[i].concat(' Processed');
+  processAnimalFromParent(animal: string[]) {
+    for (var i = 0; i < animal.length; i++) {
+      this.processedAnimals.push(animal[i].concat(' Processed'));
     }
+    
   }
 
   ngOnInit(): void {
-    this.processAnimalArray(this.animalsFromParent);
+    this.processAnimalFromParent(this.animalsFromParent);
     this.emitAnimalProccessed.emit(this.processedAnimals);
   }
 }

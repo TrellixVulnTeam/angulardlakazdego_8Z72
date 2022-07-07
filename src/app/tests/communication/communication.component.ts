@@ -12,17 +12,14 @@ export class CommunicationComponent implements OnInit {
 
   processedFromChild1: string[] = [];
 
-  receivedProcessedArray(event: string[]): void {
-    this.processedFromChild1 = event;
+  receivedProcessedArray(animal: string[]): void {
+    this.processedFromChild1 = animal;
   }
 
   constructor() { }
 
   ngOnInit(): void {
 
-  
-    console.log('receivedProcessedArray ' + this.processedFromChild1.length);
-    
   }
 
 }
