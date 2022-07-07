@@ -10,9 +10,11 @@ export class ComChild2Component implements OnInit {
   title = 'Communication Child 2';
 
   @Input()
-  processesFromParrent: string[] = [];
+  processesFromParrent: string[];
 
-  constructor() { }
+  constructor() {
+    this.processesFromParrent = [];
+  }
 
   ngOnInit(): void {
   }
