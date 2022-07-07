@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CommunicationComponent implements OnInit {
 
   title = 'Skills Communication between components @Input(), @Output()';
-  animalsParent: any[] = ['Dog','Cat','Bird','Fish']
+  animalsParent: string[] = ['Dog','Cat','Bird','Fish']
 
   processedFromChild1: string[] = [];
 
