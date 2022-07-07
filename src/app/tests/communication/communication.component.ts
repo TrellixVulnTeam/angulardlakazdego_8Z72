@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import { ComChild1Component } from './com-child1/com-child1.component';
+import { ComChild2Component } from './com-child2/com-child2.component';
 
 @Component({
   selector: 'app-communication',
@@ -11,12 +11,12 @@ export class CommunicationComponent implements OnInit {
   title = 'Skills Communication between components @Input(), @Output()';
   animalsParent: string[] = ['Dog','Cat','Bird','Fish']
 
-  processedFromChild1: string[] = [];
+  processedFromChild1: Array<string> = [];
 
-  @ViewChild('#referenceChild1')
-  child1Object: ComChild1Component = new ComChild1Component;
+  @ViewChild('child2Reference')
+  child2Object: ComChild2Component = new ComChild2Component;
 
-  arrayFromReferencedobject: string[] = this.child1Object.processedAnimals;
+  arrayFromReferencedobject: string[] = this.child2Object.processesFromParrent;
 
   receivedProcessedArray(animal: string[]): void {
     this.processedFromChild1 = animal;
@@ -26,8 +26,8 @@ export class CommunicationComponent implements OnInit {
   }
 
   printInheritedArray(): void {
-    for (var i = 0; i < this.arrayFromReferencedobject.length; i++) {
-      console.log('Array+++++'+this.arrayFromReferencedobject[i]);
+    for (var i = 0; i < this.child2Object.processesFromParrent.length; i++) {
+      console.log('Array+++++' + this.arrayFromReferencedobject.push(this.child2Object.processesFromParrent[i]));
     }
   }
 
