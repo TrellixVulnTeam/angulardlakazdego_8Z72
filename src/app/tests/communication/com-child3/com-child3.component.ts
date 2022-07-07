@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-com-child3',
@@ -9,7 +9,13 @@ export class ComChild3Component implements OnInit {
 
   title = 'Communication Child 3';
 
-  constructor() { }
+  @Input()
+  fromReference: string[];
+
+  constructor() {
+
+    this.fromReference = [];
+  }
 
   ngOnInit(): void {
   }

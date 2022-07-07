@@ -16,12 +16,12 @@
 
     <div class="">
       <app-com-child2 [processesFromParrent]="processedFromChild1"
-                     
-                      ></app-com-child2>
+                      #child2Reference>
+      </app-com-child2>
     </div>
 
     <div class="">
-      <app-com-child3></app-com-child3>
+      <app-com-child3 [fromReference]="arrayFromReferencedobject"></app-com-child3>
     </div>
 
   </div>

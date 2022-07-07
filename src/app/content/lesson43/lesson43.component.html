@@ -1,0 +1,12 @@
+<p>
+  {{title}}
+  <a href="https://www.youtube.com/watch?v=cCtV5Cv64Vc&list=PLpzwMkmxJDUyD-UTGQXuevw0YOPgvroPL&index=44">ngStyle #43</a>
+</p>
+
+<p [ngStyle]="{color: 'red'}">Job List : {{toDo.length }}</p>
+<li *ngFor="let job of toDo">
+  {{ job }}
+  <button>Done</button>
+  <button>Delete</button>
+</li>
+
