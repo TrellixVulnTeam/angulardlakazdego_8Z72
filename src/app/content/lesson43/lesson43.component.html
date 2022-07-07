@@ -6,7 +6,7 @@
 <p [ngStyle]="{color: 'red'}">Job List : {{toDo.length }}</p>
 <li *ngFor="let job of toDo">
   {{ job }}
-  <button>Done</button>
-  <button>Delete</button>
+  <button class="btn btn-outline-primary btn-sm">Done</button>
+  <button class="btn btn-outline-danger btn-sm">Delete</button>
 </li>
 
