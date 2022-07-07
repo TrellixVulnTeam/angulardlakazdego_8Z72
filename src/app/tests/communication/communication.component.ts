@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import { ComChild2Component } from './com-child2/com-child2.component';
+import { ComChild1Component } from './com-child1/com-child1.component';
 
 @Component({
   selector: 'app-communication',
@@ -13,15 +13,16 @@ export class CommunicationComponent implements OnInit {
 
   processedFromChild1: string[] = [];
 
-  @ViewChild('#referenceChild2')
-  child2Object: ComChild2Component = new ComChild2Component;
+  @ViewChild('#referenceChild1')
+  child1Object: ComChild1Component = new ComChild1Component;
 
-  arrayFromReferencedobject: string[] = this.child2Object.processesFromParrent;
+  arrayFromReferencedobject: string[] = this.child1Object.processedAnimals;
 
   receivedProcessedArray(animal: string[]): void {
     this.processedFromChild1 = animal;
     console.log('Array-----------' + this.arrayFromReferencedobject[0]);
     this.printInheritedArray();
+    console.log('Check !!!!!!!!!!!!');
   }
 
   printInheritedArray(): void {

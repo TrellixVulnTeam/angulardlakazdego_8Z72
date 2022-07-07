@@ -15,9 +15,11 @@ export class ComChild1Component implements OnInit {
   @Output()
   emitAnimalProccessed = new EventEmitter<string[]>();
 
-  processedAnimals: string[] = [];
+  processedAnimals: string[]; 
 
-  constructor() { }
+  constructor() {
+    this.processedAnimals  = [];
+}
 
   processAnimalFromParent(animal: string[]) {
     for (var i = 0; i < animal.length; i++) {

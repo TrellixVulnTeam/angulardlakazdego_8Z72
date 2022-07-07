@@ -9,13 +9,14 @@
   <div class="container">
     <div class="">
       <app-com-child1 [animalsFromParent]="animalsParent"
-                      (emitAnimalProccessed)="receivedProcessedArray($event)">
+                      (emitAnimalProccessed)="receivedProcessedArray($event)"
+                      #referenceChild1>
       </app-com-child1>
     </div>
 
     <div class="">
       <app-com-child2 [processesFromParrent]="processedFromChild1"
-                      #referenceChild2
+                     
                       ></app-com-child2>
     </div>
 
