@@ -1,10 +1,14 @@
 <body>
   <h5>{{ title }}</h5>
+  <span class="label label-success">
+    <a href="https://www.youtube.com/watch?v=bdiVKM8wWOw&list=PLpzwMkmxJDUyD-UTGQXuevw0YOPgvroPL&index=38">@Output() #37 </a>
+
+  </span>
   <p> Animals in array = {{animalsParent.length}}</p>
 
   <div class="container">
     <div class="">
-      <app-com-child1 [animalsFromParent] ="animalsParent"></app-com-child1>
+      <app-com-child1 [animalsFromParent]="animalsParent"></app-com-child1>
     </div>
 
     <div class="">
