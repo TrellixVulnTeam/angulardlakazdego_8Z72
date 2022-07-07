@@ -7,7 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class Lesson35parrentComponent implements OnInit {
 
-  title = ' Lesson #36 Component integration ';
+  title = ' Lesson #35 Component integration ';
 
  
  parentTasksArray = ['swimming', 'work', 'slip', 'shopings', 'playing'];
