@@ -14,6 +14,9 @@ export class Lesson43Component implements OnInit {
   this.toDo = ['Cleaning', 'Working', 'Job'];
   }
 
+  addNewJob(job: string) {
+  this.toDo.push(job)}
+
   ngOnInit(): void {
   }
 
