@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-com-child1',
@@ -9,12 +9,25 @@ export class ComChild1Component implements OnInit {
 
   title = 'Communication Child 1';
 
-  @Input()
+   @Input()
   animalsFromParent: string[] = [];
+
+  @Output()
+  emitAnimalProccessed = new EventEmitter<string[]>();
+
+  processedAnimals: string[] = [];
 
   constructor() { }
 
-  ngOnInit(): void {
+  processAnimalFromParent(animal: string[]) {
+    for (var i = 0; i < animal.length; i++) {
+      this.processedAnimals.push(animal[i].concat(' Processed'));
+    }
+    
   }
 
+  ngOnInit(): void {
+    this.processAnimalFromParent(this.animalsFromParent);
+    this.emitAnimalProccessed.emit(this.processedAnimals);
+  }
 }

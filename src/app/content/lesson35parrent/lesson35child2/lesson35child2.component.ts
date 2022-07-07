@@ -12,11 +12,6 @@ export class Lesson35child2Component implements OnInit {
  @Input()
  tasks: string[] = [];
 
-  receivedTasks(task: string): void {
-    this.tasks.push(task);
-  }
-
-
   constructor() { }
 
   ngOnInit(): void {

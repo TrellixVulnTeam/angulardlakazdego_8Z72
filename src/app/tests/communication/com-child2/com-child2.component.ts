@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-com-child2',
@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ComChild2Component implements OnInit {
 
   title = 'Communication Child 2';
+
+  @Input()
+  processesFromParrent: string[] = [];
 
   constructor() { }
 

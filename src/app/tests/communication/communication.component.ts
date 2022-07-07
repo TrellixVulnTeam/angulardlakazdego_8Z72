@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-communication',
@@ -8,14 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class CommunicationComponent implements OnInit {
 
   title = 'Skills Communication between components @Input(), @Output()';
-  animalsParent: any[] = ['Dog','Cat','Bird','Fish']
+  animalsParent: string[] = ['Dog','Cat','Bird','Fish']
 
+  processedFromChild1: string[] = [];
+
+  receivedProcessedArray(animal: string[]): void {
+    this.processedFromChild1 = animal;
+  }
 
   constructor() { }
 
   ngOnInit(): void {
 
-    this.animalsParent.length;
   }
 
 }
