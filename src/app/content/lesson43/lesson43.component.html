@@ -2,9 +2,6 @@
   {{title}}
   <a href="https://www.youtube.com/watch?v=cCtV5Cv64Vc&list=PLpzwMkmxJDUyD-UTGQXuevw0YOPgvroPL&index=44">ngStyle #43</a>
 </p>
-<app-lesson43-child (newJob)="addNewJob($event)">
-
-</app-lesson43-child>
 
 <p [ngStyle]="{color: changeTextColour()}">Job List : {{toDo.length }}</p>
 <li *ngFor="let job of toDo">
@@ -12,4 +9,9 @@
   <button class="btn btn-outline-primary btn-sm">Done</button>
   <button class="btn btn-outline-danger btn-sm">Delete</button>
 </li>
+<app-lesson43-child (newJob)="addNewJob($event)">
+
+</app-lesson43-child>
+
+
 
