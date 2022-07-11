@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class Lesson43Component implements OnInit {
 
   title = 'Lesson #43';
-
   toDo;
+
   constructor() {
+
   this.toDo = ['Cleaning', 'Working', 'Job'];
   }
 
