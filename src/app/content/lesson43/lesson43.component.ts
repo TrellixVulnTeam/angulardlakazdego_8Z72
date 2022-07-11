@@ -16,6 +16,7 @@ export class Lesson43Component implements OnInit {
 
   addNewJob(job: string) {
     this.toDo.push(job)
+
   }
 
   changeTextColour(): string {
