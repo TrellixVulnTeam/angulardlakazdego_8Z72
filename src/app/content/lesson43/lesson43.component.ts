@@ -21,7 +21,6 @@ export class Lesson43Component implements OnInit {
   }
 
   changeTextColour(): string {
-
     return  this.toDo.length > 5?  ' green': 'blue';
   }
 
