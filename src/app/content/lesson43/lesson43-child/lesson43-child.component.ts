@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
+
 @Component({
   selector: 'app-lesson43-child',
   templateUrl: './lesson43-child.component.html',
@@ -15,7 +16,13 @@ export class Lesson43ChildComponent implements OnInit {
   newJob = new EventEmitter<string>();
 
   add(job: HTMLInputElement) {
-        this.newJob.emit(job.value);
+    if (job.value === '') {
+      window.alert('Job can not be empty');
+    } else {
+      this.newJob.emit(job.value);
+      job.value = '';
+    }
+   
   }
 
   ngOnInit(): void {

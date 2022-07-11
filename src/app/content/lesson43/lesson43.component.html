@@ -6,7 +6,7 @@
 
 </app-lesson43-child>
 
-<p [ngStyle]="{color: 'red'}">Job List : {{toDo.length }}</p>
+<p [ngStyle]="{color: changeTextColour()}">Job List : {{toDo.length }}</p>
 <li *ngFor="let job of toDo">
   {{ job }}
   <button class="btn btn-outline-primary btn-sm">Done</button>
