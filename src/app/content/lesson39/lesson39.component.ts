@@ -14,6 +14,8 @@ export class Lesson39Component implements OnInit {
   addedString = 'This string added to check how to marge child branch to parent branch';
   secondStingOnMAster = 'String created on master!';
   forthString = 'Cretaed on branch newBranch and want to rebes into main when it is changed';
+  sixChange = 'On branch newBranch in the same file as main branch';
+
   fifthChange = 'String on main barnch';
   add(input: HTMLInputElement) {
     this.localInputToSTring = input.value;
