@@ -14,17 +14,17 @@ export class Lesson39Component implements OnInit {
 
   add(input: HTMLInputElement) {
     this.localInputToSTring = input.value;
-   
+
   }
 
-  @ViewChild('#childReference')
-    child1: Lesson39ChildComponent = new Lesson39ChildComponent;
+  @ViewChild('childReference')
+  child1: Lesson39ChildComponent = new Lesson39ChildComponent;
 
   constructor() { }
 
   ngOnInit(): void {
     this.title += this.child1.title;
-    
+
   }
 
 }
