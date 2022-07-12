@@ -12,6 +12,7 @@ export class Lesson39Component implements OnInit {
 
   localInputToSTring = '';
   addedString = 'This string added to check how to marge child branch to parent branch';
+  secondStingOnMAster = 'String created on master!';
 
   add(input: HTMLInputElement) {
     this.localInputToSTring = input.value;
