@@ -17,12 +17,14 @@ export class ContentComponent implements OnInit {
     this.tasks = task;
   }
 
- 
+
   constructor() { }
 
   ngOnInit(): void {
 
-    
+    if (this.tasks) {
+      console.log('tasks array is not empty + ' + this.tasks);
+    }
   }
 
 }
