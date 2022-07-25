@@ -39,6 +39,7 @@ import { ComChild2Component } from './tests/communication/com-child2/com-child2.
 import { ComChild3Component } from './tests/communication/com-child3/com-child3.component';
 import { Lesson43Component } from './content/lesson43/lesson43.component';
 import { Lesson43ChildComponent } from './content/lesson43/lesson43-child/lesson43-child.component';
+import { NewangularComponent } from './content/newangular/newangular.component';
 
 
 
@@ -81,6 +82,7 @@ import { Lesson43ChildComponent } from './content/lesson43/lesson43-child/lesson
     ComChild3Component,
     Lesson43Component,
     Lesson43ChildComponent,
+    NewangularComponent,
 
    
   ],

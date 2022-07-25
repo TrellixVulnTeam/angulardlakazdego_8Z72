@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 
 
 @Component({
@@ -14,6 +14,9 @@ export class Lesson43ChildComponent implements OnInit {
 
   @Output()
   newJob = new EventEmitter<string>();
+
+  @ViewChild('newJob')
+  inputFromHTML = ElementRef;
 
   add(job: HTMLInputElement) {
     if (job.value === '') {
