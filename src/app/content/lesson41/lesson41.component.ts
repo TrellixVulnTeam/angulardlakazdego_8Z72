@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnInit, SimpleChanges } from '@angular/core';
 import { Animal } from 'src/app/content/lesson41/animal';
 
 @Component({
@@ -6,7 +6,7 @@ import { Animal } from 'src/app/content/lesson41/animal';
   templateUrl: './lesson41.component.html',
   styleUrls: ['./lesson41.component.css']
 })
-export class Lesson41Component implements OnInit, OnDestroy {
+export class Lesson41Component implements OnInit {
 
 
   title = 'Lesson #41 lifecycle hooks';
@@ -21,8 +21,6 @@ export class Lesson41Component implements OnInit, OnDestroy {
                         new Animal('Piggi', 'Pig')
   ];
 
-
-
   show: boolean = true;
 
   changeTitle() {
@@ -35,28 +33,12 @@ export class Lesson41Component implements OnInit, OnDestroy {
   doNothing() { }
 
   deleteComponent() {
-    this.ngOnDestroy();
     this.delete = 'Create';
-
   }
-
 
   constructor() { }
 
-  ngOnDestroy(): void {
-    this.show = !this.show;
-        console.log('Destroyed!.');
-    }
-
-  /**
-   * It check if binded filds of component changed!
-   * It starts before ngOnInit();
-   * A reference mast change it
-   */
-  
-
   ngOnInit(): void {
-
     this.animals.push(this.dog);
     this.delete = 'Delete';
   }

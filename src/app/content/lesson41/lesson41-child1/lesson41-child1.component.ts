@@ -23,6 +23,12 @@ export class Lesson41Child1Component implements OnInit, OnChanges, DoCheck {
         console.log('Method ngDoCheck not implemented [ 3 ].');
     }
 
+
+  /**
+   * It starts at the beginning, before ngOnInit()
+   * Controls binded component filds.
+   * The reference mas change!
+   */
     ngOnChanges(changes: SimpleChanges): void {
       console.log('Implemented ngOnChanges() method ! [ 1 ]');
       console.log('Changes: ' + changes);
